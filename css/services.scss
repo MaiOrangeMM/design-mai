@@ -1,0 +1,72 @@
+@import "style.scss";
+
+.header {
+    background-color: transparent;
+}
+
+.header a {
+    color: #111;
+}
+
+// SERVICES
+.services-section {
+    background-color: #FFF;
+    height: 100%;
+}
+
+// SERVICES IN DETAIL
+.servicesdetail-section {
+    background-color: $bg-light-grey;
+}
+
+.servicesdetail-content {
+    padding-top: 3rem;
+}
+
+.servicesdetail-row {
+    display: flex;
+    justify-content: space-between;
+    background-color: plum;
+}
+
+.servicesdetail-box {
+    width: 45%;
+    background-color: yellow;
+    padding: 1rem;
+}
+
+// APPROACH
+.approach-section {
+    background-color: #FFF;
+    height: 100%;
+}
+
+.approach-content {
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.approach-row {
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.approach-box {
+    width: 25vw;
+}
+
+.approach-img {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 25vw;
+    height: 25vh;
+}
+
+.servicesdetail-box h3, .approach-box h3 {
+    padding-top: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
