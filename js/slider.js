@@ -1,8 +1,10 @@
 
+
 /////////////////////////////////////////////////////
 // Testimonial Slider
 /////////////////////////////////////////////////////
 var slideIndex = 1;
+var slides = document.getElementsByClassName("testimonial-slider-quote");
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -15,7 +17,6 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("testimonial-slider-quote");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
@@ -28,4 +29,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+document.getElementsByClassName('testimonial-slider-container')[0].addEventListener('swiped-right', function(e) {
+  plusSlides(-1)
+});
 
+document.getElementsByClassName('testimonial-slider-container')[0].addEventListener('swiped-left', function(e) {
+  plusSlides(1)
+});
