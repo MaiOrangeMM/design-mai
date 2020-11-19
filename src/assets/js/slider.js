@@ -1,5 +1,3 @@
-
-
 /////////////////////////////////////////////////////
 // Testimonial Slider
 /////////////////////////////////////////////////////
@@ -29,10 +27,16 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-document.getElementsByClassName('testimonial-slider-container')[0].addEventListener('swiped-right', function(e) {
-  plusSlides(-1)
-});
 
-document.getElementsByClassName('testimonial-slider-container')[0].addEventListener('swiped-left', function(e) {
-  plusSlides(1)
-});
+var container = document.querySelector('.testimonial-slider-container');
+var listener = SwipeListener(container);
+container.addEventListener('swipe', function (e) {
+  var directions = e.detail.directions;
+  if (directions.left) {
+    plusSlides(1)
+  }
+ 
+  if (directions.right) {
+    plusSlides(-1)
+  }
+})

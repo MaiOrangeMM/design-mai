@@ -1,65 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design-Mai</title>
-
-    <link rel="icon" type="image/svg+xml" href="src/img/Logo-Design-Mai-Black.ico">
-    <link rel="stylesheet" href="css/style.css">
+    @@include("partials/header.html")
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <a class="nav-logo" href="\">
-                <img src="src/img/Logo-Design-Mai-White.svg" width="40px">
-            </a>
-            <div class="nav-links">
-                <a href="portfolio.html" class="menu-item">Portfolio</a>
-                <a href="services.html" class="menu-item">Services</a>
-                <a href="about.html" class="menu-item">About</a>
-                <a href="contact.html" class="menu-item">Contact</a>
-            </div>
-        </nav>
-
-        <div class="toggle-btn">
-            <span class="menu-span">Menu</span>
-            <div class="menu-btn">
-                <div class="menu-btn__lines"></div>
-            </div>
-        </div>
-
-        <div class="side-nav">
-            <div class="side-nav-link">
-                <a href="\" class="side-nav-link-item">Home</a>
-                <a href="portfolio.html" class="side-nav-link-item">Portfolio</a>
-                <a href="services.html" class="side-nav-link-item">Services</a>
-                <a href="about.html#" class="side-nav-link-item">About</a>
-                <a href="contact.html" class="side-nav-link-item">Contact</a>
-            </div>
-            <div class="side-nav-action">
-                <a href="contact.html" class="side-nav-book">Book a free consulting session</a>
-            </div>
-            <div class="side-nav-social">
-                <a href="#" class="side-nav-social-item instagram">Instagram</a>
-                <a href="#" class="side-nav-social-item dribble">Dribble</a>
-                <a href="#" class="side-nav-social-item linkedin">Linked In</a>
-            </div>
-            <div class="side-nav-social-symbol">
-                <a class="side-nav-social-icon" href="#">
-                    <img src="src/img/instagram.svg" width="20rem">
-                </a>
-                <a class="side-nav-social-icon" href="#">
-                    <img src="src/img/dribbel.svg" width="20rem">
-                </a>
-                <a class="side-nav-social-icon" href="#">
-                    <img src="src/img/linked in.svg" width="20rem">
-                </a>
-            </div>
-        <div>
-    </header>
-
+    
+    @@include("partials/nav.html")
 
     <!-- HERO -->
     <section class="hero-section">
@@ -95,7 +42,7 @@
             <!-- Design Mai -->
             <div class="portfolio-box designmai">
                 <div class="portfolio-pic">
-                    <img src="src/img/Prototyping process _Sal.svg" width="100%">
+                    <img src="assets/img/Prototyping process _Sal.svg" width="100%">
                 </div>
                 <div class="portfolio-title">
                     <span>
@@ -112,7 +59,7 @@
             <!-- Fewo Heidenrod -->
             <div class="portfolio-box fewoheidenrod">
                 <div class="portfolio-pic">
-                    <img src="src/img/Prototyping process _Sal.svg" width="100%">
+                    <img src="assets/img/Prototyping process _Sal.svg" width="100%">
                 </div>
                 <div class="portfolio-title">
                     <span>
@@ -131,7 +78,7 @@
             <!-- TusharInnovation -->
             <div class="portfolio-box tusharinnovation">
                 <div class="portfolio-pic">
-                    <img src="src/img/Prototyping process _Sal.svg" width="100%">
+                    <img src="assets/img/Prototyping process _Sal.svg" width="100%">
                 </div>
                 <div class="portfolio-title">
                     <span>
@@ -147,7 +94,7 @@
             <!-- SSV-Watzelhain -->
             <div class="portfolio-box ssvwatzelhain">
                 <div class="portfolio-pic">
-                    <img src="src/img/Prototyping process _Sal.svg" width="100%">
+                    <img src="assets/img/Prototyping process _Sal.svg" width="100%">
                 </div>
                 <div class="portfolio-title">
                     <span>
@@ -209,7 +156,7 @@
                 </div>
 
                 <div class="services-illust">
-                    <img src="src/img/Design Components Short _Sal.svg" width="60%">
+                    <img src="assets/img/Design Components Short _Sal.svg" width="60%">
                 </div>
         </div>
     
@@ -240,7 +187,7 @@
 
         <div class="testimonial-slider-content">
             <div class="testimonial-slider-pic">
-                <img src="src/img/Reviews _Sal.svg" width="85%">
+                <img src="assets/img/Reviews _Sal.svg" width="85%">
             </div>
             
             <div class="testimonial-slider-box">
@@ -319,38 +266,11 @@
         </div>
 
         <div class="sitemap-pic">
-            <img src="src/img/Social Media _Sal.svg" width="80%">
+            <img src="assets/img/Social Media _Sal.svg" width="80%">
         </div>
     </section>
 
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-copy">
-            <h4>
-                &copy; 
-                <script>
-                    new Date().getFullYear()>2017&&document.write(new Date().getFullYear());
-                </script>
-                Design-mai
-            </h4>
-        </div>
+    @@include("partials/footer.html")
 
-        <div class="footer-social">
-            <a class="footer-social-link" href="#">
-                <img src="src/img/instagram.svg" width="20rem">
-            </a>
-            <a class="footer-social-link" href="#">
-                <img src="src/img/dribbel.svg" width="20rem">
-            </a>
-            <a class="footer-social-link" href="#">
-                <img src="src/img/linked in.svg" width="20rem">
-            </a>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/swiped-event.js"></script>
-    <script src="js/slider.js"></script>
 </body>
 </html>
