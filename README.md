@@ -1,0 +1,5 @@
+- at first install `node` (https://nodejs.org/en/)
+- install `yarn` (https://classic.yarnpkg.com/en/docs/install)
+- install all dependencies with `yarn`
+- run gulp: `npx gulp` and watch your browser reload with every change to your files made
+- to build: `npx gulp build`, all built files are within `dist/`, use this to upload it to your server
