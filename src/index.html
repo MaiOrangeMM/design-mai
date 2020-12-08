@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @@include("partials/header.html")
+    @@include("partials/header.html", {
+        "pageTitle": "Mai Design"
+    })
 </head>
 
 <body>
@@ -72,11 +74,12 @@
                 </div>
             </div>
         </div>
+        
 
         <!-- row 2 -->
         <div class="row-two portfolio-content-row">
             <!-- TusharInnovation -->
-            <div class="portfolio-box tusharinnovation">
+            <!-- <div class="portfolio-box tusharinnovation">
                 <div class="portfolio-pic">
                     <img src="assets/img/Prototyping process _Sal.svg" width="100%">
                 </div>
@@ -89,7 +92,12 @@
                         We host the website, domain and his business email address.
                     </span>
                 </div>
-            </div>
+            </div> -->
+            @@include("partials/portfolioBox.html", {
+                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                "title":"Tushar Innovation",
+                "description":"For Tushar we redesign the website and made sure it is also responsive on mobile phones. We host the website, domain and his business email address."
+            })
 
             <!-- SSV-Watzelhain -->
             <div class="portfolio-box ssvwatzelhain">
