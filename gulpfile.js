@@ -14,7 +14,7 @@ const gulpif = require('gulp-if');
 const npmdist = require('gulp-npm-dist');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const useref = require('gulp-useref');
 const fs = require('fs');
 
@@ -202,7 +202,6 @@ gulp.task('html:preview', function() {
     .pipe(gulpif('*.css', cleancss()))
     .pipe(gulp.dest(paths.dist.base.dir));
 });
-
 
 gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
 gulp.task('build:preview', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html:preview'));

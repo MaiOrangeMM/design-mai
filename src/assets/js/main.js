@@ -1,6 +1,3 @@
-/////////////////////////////////////////////////////
-// Toggle Buttons
-/////////////////////////////////////////////////////
 const menuItems = document.querySelector('.side-nav');
 const menuSpan = document.querySelector('.menu-span');
 const menuBtn = document.querySelector('.menu-btn');
