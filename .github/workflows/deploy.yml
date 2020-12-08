@@ -21,4 +21,4 @@ jobs:
           username: w018b260
           password: ${{ secrets.ftp_password }}
           local-dir: dist/
-          server-dir: w018b260/test.design-mai.de/
+          server-dir: test.design-mai.de
