@@ -45,6 +45,10 @@ const paths = {
       dir: './src/assets/css',
       files: './src/assets/css/**/*'
     },
+    fonts: {
+      dir: './src/assets/fonts',
+      files: './src/assets/fonts/**/*'
+    },
     html: {
       dir: './src',
       files: './src/**/*.html',
