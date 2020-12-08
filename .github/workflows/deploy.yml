@@ -2,23 +2,22 @@ on: [push]
 jobs:
   deploy_job:
     runs-on: ubuntu-latest
-    name: build&deploy
+    name: 🎉 build&deploy
     steps:
       # To use this repository's private action, you must check out the repository
-      - name: Checkout
+      - name: 🚚 Checkout
         uses: actions/checkout@v2
-
-      - name: Install Dependencies
+      - name: 📂 Install Dependencies
         run: yarn
       - name: Install Gulp
         run: yarn global add gulp
       - name: Build
         run: gulp build
-      - name: 📂 Sync files
+      - name: 🚀 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: w018b260.kasserver.com
-          username: w018b260
+          server: ${{ secrets.ftp_server }}
+          username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
           local-dir: dist/
-          server-dir: test.design-mai.de
+          server-dir: ${{ secrets.ftp_server_dir }}
