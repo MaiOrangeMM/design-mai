@@ -42,57 +42,24 @@
         <!-- Row 1 -->
         <div class="row-one portfolio-content-row">
             <!-- Design Mai -->
-            <div class="portfolio-box designmai">
-                <div class="portfolio-pic">
-                    <img src="assets/img/Prototyping process _Sal.svg" width="100%">
-                </div>
-                <div class="portfolio-title">
-                    <span>
-                        <strong>Design-Mai</strong><br/>
-                    </span>
-                    <span class="portfolio-description">
-                        We created our website completely from scratch. 
-                        Therefore, we used HTML, SCSS and JS to give it a fresh and mordern look 
-                        on any device.
-                    </span>
-                </div>
-            </div>
+            @@include("partials/portfolioBox.html", {
+                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                "title":"Design-Mai",
+                "description":"We created our website completely from scratch. Therefore, we used HTML, SCSS and JS to give it a fresh and mordern look on any device."
+            })
 
             <!-- Fewo Heidenrod -->
-            <div class="portfolio-box fewoheidenrod">
-                <div class="portfolio-pic">
-                    <img src="assets/img/Prototyping process _Sal.svg" width="100%">
-                </div>
-                <div class="portfolio-title">
-                    <span>
-                        <strong>Fewo-Heidenrod</strong><br/>
-                    </span>
-                    <span class="portfolio-description">
-                        We create a simple and beautiful Wordpress website for Fewo-Heidenrod.
-                        Hosting, Domain, SSL and Domain email were set up and manage from us.
-                    </span>
-                </div>
-            </div>
+            @@include("partials/portfolioBox.html", {
+                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                "title":"Fewo-Heidenrod",
+                "description":"We create a simple and beautiful Wordpress website for Fewo-Heidenrod. Hosting, Domain, SSL and Domain email were set up and manage from us."
+            })
         </div>
         
 
         <!-- row 2 -->
         <div class="row-two portfolio-content-row">
             <!-- TusharInnovation -->
-            <!-- <div class="portfolio-box tusharinnovation">
-                <div class="portfolio-pic">
-                    <img src="assets/img/Prototyping process _Sal.svg" width="100%">
-                </div>
-                <div class="portfolio-title">
-                    <span>
-                        <strong>Tushar Innovation</strong><br/>
-                    </span>
-                    <span class="portfolio-description">
-                        For Tushar we redesign the website and made sure it is also responsive on mobile phones.
-                        We host the website, domain and his business email address.
-                    </span>
-                </div>
-            </div> -->
             @@include("partials/portfolioBox.html", {
                 "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
                 "title":"Tushar Innovation",
@@ -100,21 +67,11 @@
             })
 
             <!-- SSV-Watzelhain -->
-            <div class="portfolio-box ssvwatzelhain">
-                <div class="portfolio-pic">
-                    <img src="assets/img/Prototyping process _Sal.svg" width="100%">
-                </div>
-                <div class="portfolio-title">
-                    <span>
-                        <strong>SSV-Watzelhain</strong><br/>
-                    </span>
-                    <span class="portfolio-description">
-                        We made a completely new redesign of the website for SSV-Watzelhain.<br/>
-                        To ensure the usability we include simple fonts and made it mobible ready.
-                        <br />
-                    </span>
-                </div>
-            </div>
+            @@include("partials/portfolioBox.html", {
+                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                "title":"SSV-Watzelhain",
+                "description":"We made a completely new redesign of the website for SSV-Watzelhain. To ensure the usability we include simple fonts and made it mobible ready."
+            })
         </div>
 
         <h3 class="h3-action">→ View all projects</h3>
@@ -245,39 +202,7 @@
     </section>
 
 
-    <!-- Sitemap -->
-    <section class="sitemap-section">
-         <div class="sitemap-contact">
-            <h3>Contact</h3>
-            <ul>
-                <li>info@design-mai.de</li>
-            </ul>
-        </div>
-
-        <div class="sitemap-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li>Portfolio</li>
-                <li>Services</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-
-        <div class="sitemap-terms">
-            <h3>Policy</h3>
-            <ul>
-                <li>Policy terms</li>
-                <li>Privacy</li>
-                <li><a href="credits.html">Credits</a></li>
-            </ul>
-        </div>
-
-        <div class="sitemap-pic">
-            <img src="assets/img/Social Media _Sal.svg" width="80%">
-        </div>
-    </section>
-
+    <!-- Sitemap & Footer -->
     @@include("partials/footer.html")
 
 </body>
