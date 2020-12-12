@@ -46,24 +46,28 @@ section {
 }
 
 .rotating-text .rotating-innertext {
-    color: #FFF;
-    position: relative;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
-  
-    animation:move 6s;
-    animation-iteration-count:infinite;
-    animation-delay:1s;
+    color: #fff;
+    overflow: hidden;
+    height: 80px;
 }
 
-@keyframes move{
-    0%  { top: 0rem; }
-    20% { top: -6rem; }
-    40% { top: -12rem; }
-    60% { top: -18rem; }
-    80% { top: -24rem; }
-    100% { top: 0rem; }
+.rotating-innertext div {
+    height: 80px;
+    margin-bottom: 80px;
+}
+
+.rotating-innertext div:first-child {
+    animation: move 10s linear infinite;
+}
+
+@keyframes move {
+    0% { margin-top: -480px; }
+    5% { margin-top: -320px; }
+    33% { margin-top: -320px; }
+    38% { margin-top: -160px; }
+    66% { margin-top: -160px; }
+    71% { margin-top: 0px; }
+    100% {margin-top: 0px; }
 }
 
 .hero-text h3 {
@@ -351,6 +355,15 @@ section {
         padding: 0.5rem 1rem 1rem 1rem;
     }
 
+    .rotating-innertext {
+        height: 40px;
+    }
+    
+    .rotating-innertext div {
+        height: 40px;
+        margin-bottom: 40px;
+    }
+    
     .rotating-text b {
         height: 3rem;
     }
@@ -364,13 +377,14 @@ section {
         font-size: 1.2rem;
     }
 
-    @keyframes move{
-        0%  { top: 0rem; }
-        20% { top: -5rem; }
-        40% { top: -10rem; }
-        60% { top: -15rem; }
-        80% { top: -19rem; }
-        100% { top: 0rem; }
+    @keyframes move {
+        0% { margin-top: -240px; }
+        5% { margin-top: -160px; }
+        33% { margin-top: -160px; }
+        38% { margin-top: -80px; }
+        66% { margin-top: -80px; }
+        71% { margin-top: 0px; }
+        100% {margin-top: 0px; }
     }
 
     // Portfolio Mobile     

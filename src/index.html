@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     @@include("partials/header.html", {
-        "pageTitle": "Mai Design"
+        "pageTitle": "Design Mai | Home"
     })
 </head>
 
 <body>
-    
-    @@include("partials/nav.html")
+    <!-- NAV -->
+    @@include("partials/nav.html", {
+        "logo": "@@webRoot/assets/img/Logo-Design-Mai-White.svg"
+    })
 
     <!-- HERO -->
     <section class="hero-section">
@@ -16,17 +18,11 @@
             <h1>We love to design</h1>
 
             <div class="rotating-text">
-                <b><div class="rotating-innertext">
-                    creative identities.<br />
-                    <br /> 
-                    beautiful websites.<br />
-                    <br />
-                    professional brands.<br />
-                    <br />
-                    fit solutions.<br />
-                    <br />
-                    digital innovations.
-                </div></b> 
+                <div class="rotating-innertext">
+                    <div class="slider-text">beautiful websites.</div>
+                    <div class="slider-text">professional brands.</div>
+                    <div class="slider-text">fit solutions.</div>                  
+                </div> 
             </div>
             <br>
             <h3 class="hero-h3-slogan">Make your ideas a Reality. Start today.</h3>
