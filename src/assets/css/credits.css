@@ -131,7 +131,7 @@ nav a {
 
 .menu-item {
   display: inline-block;
-  background: linear-gradient(to left, rgba(255, 129, 129, 0) 50%, salmon 50%) right;
+  background: linear-gradient(to left, rgba(255, 129, 129, 0) 50%, #52aef8 50%) right;
   background-size: 201%;
   transition: .4s ease-out;
   padding: 0.5rem; }
@@ -175,7 +175,7 @@ nav a {
 .menu-btn__lines::after {
   width: 1.5rem;
   height: 0.2rem;
-  background-color: salmon;
+  background-color: #52aef8;
   transition: all 0.5s ease-in-out; }
 
 .menu-btn__lines::before,
@@ -233,7 +233,7 @@ nav a {
 
 .side-nav-link-item {
   display: inline-block;
-  background: linear-gradient(to left, #fff 50%, salmon 50%) right;
+  background: linear-gradient(to left, #fff 50%, #52aef8 50%) right;
   background-size: 201%;
   transition: 0.5s ease-out; }
 
@@ -251,7 +251,7 @@ nav a {
   transition: all 0.2s ease-in-out; }
 
 .side-nav-action a:hover {
-  border-bottom: 2px solid salmon; }
+  border-bottom: 2px solid #52aef8; }
 
 .side-nav-social {
   padding: 2rem 0; }
@@ -262,7 +262,7 @@ nav a {
 
 .side-nav-social-item {
   display: inline-block;
-  background: linear-gradient(to left, #fff 50%, salmon 50%) right;
+  background: linear-gradient(to left, #fff 50%, #52aef8 50%) right;
   background-size: 201%;
   transition: .3s ease-out; }
 
@@ -308,7 +308,7 @@ nav a {
   transition: all 0.4s ease; }
 
 .sitemap-section ul li:hover {
-  color: salmon; }
+  color: #52aef8; }
 
 .sitemap-section ul li a, .sitemap-section ul li a {
   text-decoration: none;
@@ -316,7 +316,7 @@ nav a {
 
 /* Footer ==================================================*/
 .footer {
-  background-color: salmon;
+  background-color: #52aef8;
   padding: 1rem 15rem;
   color: #111;
   display: flex;
@@ -395,7 +395,7 @@ nav a {
     margin: 0.5em;
     transition: all 0.5s ease-out; }
   .side-nav-social-icon:hover {
-    background-color: salmon; }
+    background-color: #52aef8; }
   /* CLEAN */
   .sitemap-section {
     display: flex;
@@ -447,8 +447,8 @@ h3 {
   transition: all 0.2s ease-in-out; }
 
 .credit-link:hover {
-  color: salmon;
-  border-bottom: 1px solid salmon; }
+  color: #52aef8;
+  border-bottom: 1px solid #52aef8; }
 
 /* For mobile phones: */
 @media only screen and (min-width: 260px) and (max-width: 1440px) {

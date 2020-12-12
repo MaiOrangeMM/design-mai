@@ -1,64 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design-Mai</title>
-
-    <link rel="icon" type="image/svg+xml" href="src/img/Logo-Design-Mai-Black.ico">
-    <link rel="stylesheet" href="css/services.css">
-</head>
+    <head>
+        @@include("partials/header.html", {
+            "pageTitle": "Design Mai | Services",
+            "cssFile": "@@webRoot/assets/css/services.css"
+        })
+    </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <a class="nav-logo" href="\">
-                <img src="src/img/Logo-Design-Mai-Black.svg" width="40px">
-            </a>
-            <div class="nav-links">
-                <a href="portfolio.html" class="menu-item">Portfolio</a>
-                <a href="services.html" class="menu-item">Services</a>
-                <a href="about.html" class="menu-item">About</a>
-                <a href="contact.html" class="menu-item">Contact</a>
-            </div>
-        </nav>
-
-        <div class="toggle-btn">
-            <span class="menu-span">Menu</span>
-            <div class="menu-btn">
-                <div class="menu-btn__lines"></div>
-            </div>
-        </div>
-
-        <div class="side-nav">
-            <div class="side-nav-link">
-                <a href="\" class="side-nav-link-item">Home</a>
-                <a href="portfolio.html" class="side-nav-link-item">Portfolio</a>
-                <a href="services.html" class="side-nav-link-item">Services</a>
-                <a href="about.html#" class="side-nav-link-item">About</a>
-                <a href="contact.html" class="side-nav-link-item">Contact</a>
-            </div>
-            <div class="side-nav-action">
-                <a href="contact.html" class="side-nav-book">Book a free consulting session</a>
-            </div>
-            <div class="side-nav-social">
-                <a href="#" class="side-nav-social-item instagram">Instagram</a>
-                <a href="#" class="side-nav-social-item dribble">Dribble</a>
-                <a href="#" class="side-nav-social-item linkedin">Linked In</a>
-            </div>
-            <div class="side-nav-social-symbol">
-                <a class="side-nav-social-icon" href="#">
-                    <img src="src/img/instagram.svg" width="20rem">
-                </a>
-                <a class="side-nav-social-icon" href="#">
-                    <img src="src/img/dribbel.svg" width="20rem">
-                </a>
-                <a class="side-nav-social-icon" href="#">
-                    <img src="src/img/linked in.svg" width="20rem">
-                </a>
-            </div>
-        <div>
-    </header>
+    <!-- NAV -->
+    @@include("partials/nav.html", {
+        "logo": "@@webRoot/assets/img/Logo-Design-Mai-Black.svg"
+    })   
 
     <!-- SERVICE -->
     <section class="services-section">
@@ -103,7 +56,7 @@
                 </div>
 
                 <div class="services-illust">
-                    <img src="src/img/Design Components Short _Sal.svg" width="60%">
+                    <img src="@@webRoot/src/assets/img/Design Components Short _Sal.svg" width="60%">
                 </div>
         </div>
     </section>
@@ -165,7 +118,7 @@
                 <!-- 01 -->
                 <div class="approach-box">
                     <div class="approach-img">
-                        <img src="src/img/Questions _Sal.svg" width="50%">
+                        <img src="@@webRoot/src/assets/img/Questions _Sal.svg" width="50%">
                     </div>
                     <h3>1. Understand</h3>
                     <p>At the beginning, we would like to learn about your company, visions and the reasons you need our help.</p>
@@ -173,7 +126,7 @@
                 <!-- 02 -->
                 <div class="approach-box">
                     <div class="approach-img">
-                        <img src="src/img/Concept_Prototyping _Sal.svg" width="50%">
+                        <img src="@@webRoot/src/assets/img/Concept_Prototyping _Sal.svg" width="50%">
                     </div>
                     <h3>2. Concepts</h3>
                     <p>After getting to know your painpoints we will come up with ideas to solve you problems.</p>
@@ -185,7 +138,7 @@
                 <!-- 03 -->
                 <div class="approach-box">
                     <div class="approach-img">
-                        <img src="src/img/Projectmanagement _Sal.svg" width="50%">
+                        <img src="@@webRoot/src/assets/img/Projectmanagement _Sal.svg" width="50%">
                     </div>
                     <h3>3. Timeline</h3>
                     <p>Then we set up a timeline to declare the steps and date.</p>
@@ -193,7 +146,7 @@
                 <!-- 04 -->
                 <div class="approach-box">
                     <div class="approach-img">
-                        <img src="src/img/Programming_Coding _Sal.svg" width="50%">
+                        <img src="@@webRoot/src/assets/img/Programming_Coding _Sal.svg" width="50%">
                     </div>
                     <h3>4. Implementation</h3>
                     <p>Next, we will code you website and set everything up.</p>
@@ -205,7 +158,7 @@
                 <!-- 05 -->
                 <div class="approach-box">
                     <div class="approach-img">
-                        <img src="src/img/Analysis_Improvement _Sal.svg" width="50%">
+                        <img src="@@webRoot/src/assets/img/Analysis_Improvement _Sal.svg" width="50%">
                     </div>
                     <h3>5. Improvement</h3>
                     <p>Improvement comes with open communications. To make your ideas to reality we need your input.</p>
@@ -213,7 +166,7 @@
                 <!-- 06 -->
                 <div class="approach-box">
                     <div class="approach-img">
-                        <img src="src/img/Success-Delivery_Mobil_Web _Sal.svg" width="50%">
+                        <img src="@@webRoot/src/assets/img/Success-Delivery_Mobil_Web _Sal.svg" width="50%">
                     </div>
                     <h3>6. Delivery</h3>
                     <p>Once the final detail is approved, we will hand your website.</p>
@@ -269,7 +222,7 @@
         </div>
 
         <div class="sitemap-pic">
-            <img src="src/img/Social Media _Sal.svg" width="80%">
+            <img src="@@webRoot/src/assets/img/Social Media _Sal.svg" width="80%">
         </div>
     </section>
 
@@ -288,13 +241,13 @@
 
         <div class="footer-social">
             <a class="footer-social-link" href="#">
-                <img src="src/img/instagram.svg" width="20rem">
+                <img src="@@webRoot/src/assets/img/instagram.svg" width="20rem">
             </a>
             <a class="footer-social-link" href="#">
-                <img src="src/img/dribbel.svg" width="20rem">
+                <img src="@@webRoot/src/assets/img/dribbel.svg" width="20rem">
             </a>
             <a class="footer-social-link" href="#">
-                <img src="src/img/linked in.svg" width="20rem">
+                <img src="@@webRoot/src/assets/img/linked in.svg" width="20rem">
             </a>
         </div>
     </footer>
