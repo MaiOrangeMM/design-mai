@@ -1,28 +1,19 @@
 @import "general.scss";
 
-.sitemap-h6{
-    text-transform: uppercase;
+.display-1 {
+    color: $white;
+}
+
+.h5 {
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.customer-h5 {
     font-weight: 600;
-    
+    font-size: 1.2rem;
 }
 
-.list-group {
-    .list-group-item:first-child {
-        border-top: 2px solid $black;
-    }
-
-    .list-group-item, .list-group-item:last-child {
-        background-color: transparent;
-        border-bottom: 1px solid $black;
-        padding: 0.5rem 0;
-    }    
-}
-
-a, a:visited {
-    color: $black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: $primary;
+.dot {
+    color: white;
 }
