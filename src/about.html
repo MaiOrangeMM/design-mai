@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include("partials/header.html", {
+        "pageTitle": "Design Mai | About",
+        "cssFile": "@@webRoot/assets/css/about.css"
+    })
+</head>
+
+<body>
+    <!-- NAV -->
+    @@include("partials/nav.html", {
+        "logo": "@@webRoot/assets/img/Logo-Design-Mai-Black.svg"
+    })
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio-section">
+        <h2>About Design-Mai </h2>
+            
+        <h3>We are a passionate webdesign team. </h3>
+    
+        <h3 class="h3-action">→ View all projects</h3>
+    </section>
+
+    <!-- Call to action -->
+    <section class="action-section">
+        <div class="action-box">
+            <div class="action-text">
+                <h2 class="h2-idea">Interested?</h2>
+                <a class="h2-action" href="contact.html"><h2 class="h2-action">Let's work together.</h2></a>
+            </div>
+        
+            <div class="action-social">
+                <a class="action-link" href="#">Instagram</a>
+                <a class="action-link" href="#">Dribble</a>
+                <a class="action-link" href="#">Linked In</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE -->
+    <section class="services-section">
+        <h2>How can we help you?</h2>
+        
+            <div class="services-content">
+                <div class="strategy">
+                    <h3>Strategy</h3>
+                    <ul>
+                        <li>Online strategy</li>
+                        <li>Consulting</li>
+                    </ul>
+                </div>
+                <div class="design">
+                    <h3>Design</h3>
+                    <ul>
+                        <li>Website Design</li>
+                        <li>Responsive Design</li>
+                        <li>Business Package</li>
+                    </ul>
+                </div>
+                <div class="development">
+                    <h3>Development</h3>
+                    <ul>
+                        <li>Websites</li>
+                        <li>Landingpages</li>
+                        <li>Web Optimization</li>
+                        <li>SEO</li>
+                        <li>HTML5 / CSS3 / JS</li>
+                        <li>Wordpress</li>
+                    </ul>
+                </div>
+                <div class="hosting">
+                    <h3>Hosting</h3>
+                    <ul>
+                        <li>Webspace</li>
+                        <li>Domain</li>
+                        <li>SSL-Certificate</li>
+                        <li>Domain Email</li>
+                        <li>Maintenance</li>
+                    </ul>
+                </div>
+
+                <div class="services-illust">
+                    <img src="@@webRoot/src/assets/img/Design Components Short _Sal.svg" width="60%">
+                </div>
+        </div>
+    
+        <h3 class="h3-action">→ Learn more</h3>
+    </section>
+    
+
+    <!-- Sitemap && Footer-->
+    @@include("partials/footer.html")
+    
+</body>
+</html>

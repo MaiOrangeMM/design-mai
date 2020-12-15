@@ -16,6 +16,7 @@ const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify-es').default;
 const useref = require('gulp-useref');
+const purgecss = require('gulp-purgecss');
 const fs = require('fs');
 
 // Define paths
@@ -111,8 +112,17 @@ gulp.task('scss', function() {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(gulp.dest(paths.src.css.dir))
-    .pipe(browsersync.stream());
 });
+
+gulp.task('purgecss', function() {
+  return gulp
+    .src(paths.src.css.dir)
+    .pipe(purgecss({
+      content: [paths.src.html.files]
+    }))
+    .pipe(gulp.dest(paths.src.css.dir))
+    .pipe(browsersync.stream());
+})
 
 gulp.task('fileinclude', function(callback) {
   return gulp
@@ -207,6 +217,6 @@ gulp.task('html:preview', function() {
     .pipe(gulp.dest(paths.dist.base.dir));
 });
 
-gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
-gulp.task('build:preview', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html:preview'));
-gulp.task('default', gulp.series(gulp.parallel('fileinclude', 'scss'), gulp.parallel('browsersync', 'watch')));
+gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'purgecss', 'html'));
+gulp.task('build:preview', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'purgecss', 'html:preview'));
+gulp.task('default', gulp.series(gulp.parallel('fileinclude', 'scss'), 'purgecss', gulp.parallel('browsersync', 'watch')));
