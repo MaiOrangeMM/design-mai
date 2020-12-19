@@ -1,23 +1,26 @@
-<header class="header">
-    <nav>
-        <a class="nav-logo" href="\">
-            <img src="@@logo" width="40px">
-        </a>
-        <div class="nav-links">
-            <a href="portfolio.html" class="menu-item">Portfolio</a>
-            <a href="services.html" class="menu-item">Services</a>
-            <a href="about.html" class="menu-item">About</a>
-            <a href="contact.html" class="menu-item">Contact</a>
+<header class="header container-fluid bg-secondary py-4">
+    <nav class="container">
+        <div class="row justify-content-between">
+            <a class="nav-logo col-2 col-lg-1" href="\">
+                <img src="@@logo" width="40px">
+            </a>
+
+            <div class="nav-links col-lg-9 d-none d-lg-block">
+                <a href="portfolio.html" class="menu-item">Portfolio</a>
+                <a href="services.html" class="menu-item">Services</a>
+                <a href="about.html" class="menu-item">About</a>
+                <a href="contact.html" class="menu-item">Contact</a>
+            </div> 
+            
+            <div class="toggle-btn col-4 col-lg-2">
+                <span class="menu-span">Menu</span>
+                <div class="menu-btn">
+                    <div class="menu-btn__lines"></div>
+                </div>
+            </div>
         </div>
     </nav>
-
-    <div class="toggle-btn">
-        <span class="menu-span">Menu</span>
-        <div class="menu-btn">
-            <div class="menu-btn__lines"></div>
-        </div>
-    </div>
-
+    
     <div class="side-nav">
         <div class="side-nav-link">
             <a href="\" class="side-nav-link-item">Home</a>

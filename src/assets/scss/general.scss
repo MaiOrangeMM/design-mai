@@ -3,8 +3,9 @@ Türkis: #219ebc
 Babyblau: #4ea8de
 Grün: #55a630;
 */
-$primary: #4ea8de;
+$primary: salmon;
 $secondary: #d3d3d3;
+$warning: #999;
 $black: #000;
 $white: #FFF;
 
@@ -12,25 +13,6 @@ $white: #FFF;
 
 .display-1, .display-2, .display-3, .display-4, .display-5, .display-6  {
     font-weight: 600;
-}
-
-
-/* SITE MAP */
-.sitemap-h6{
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.list-group {
-    .list-group-item:first-child {
-        border-top: 2px solid $black;
-    }
-
-    .list-group-item, .list-group-item:last-child {
-        background-color: transparent;
-        border-bottom: 1px solid $black;
-        padding: 0.5rem 0;
-    }    
 }
 
 a, a:visited {
@@ -61,4 +43,85 @@ a:hover {
 
 .socialmediaicon:hover {
     background-color: #FFF;
+}
+
+/* NAV */
+.toggle-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu-span {
+    padding-right: 1rem;
+    color: $warning;
+    font-size: 1.1rem;
+}
+
+.menu-span.open {
+    display: none;
+}
+
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-btn__lines,
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: $primary;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+    content: "";
+    position: absolute;
+}
+
+.menu-btn__lines::before {
+    transform: translateY(-0.5rem);
+}
+.menu-btn__lines::after {
+    transform: translateY(0.5rem);
+}
+
+.menu-btn.open .menu-btn__lines {
+    background-color: transparent;
+}
+
+.menu-btn.open .menu-btn__lines::before {
+    transform: rotate(45deg);
+}
+
+.menu-btn.open .menu-btn__lines::after {
+    transform: rotate(-45deg);
+}
+
+/* SITE MAP */
+.sitemap-h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.list-group {
+    .list-group-item:first-child {
+        border-top: 2px solid $black;
+    }
+
+    .list-group-item, .list-group-item:last-child {
+        background-color: transparent;
+        border-bottom: 1px solid $black;
+        padding: 0.5rem 0;
+    }    
 }
