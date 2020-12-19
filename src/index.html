@@ -38,53 +38,54 @@
 
 
     <!-- PORTFOLIO -->
-    <section class="portfolio-section">
-        <h2>What we've created.</h2>
+    <section class="portfolio-section pt-5 pb-9 px-4 py-lg-6">
+        <div class="container">
+            <h2 class="display-5 pb-4">What we've created.</h2>
+
+            <!-- Row 1 -->
+            <div class="row justify-content-lg-between">
+                <!-- Design Mai -->
+                @@include("partials/portfolioBox.html", {
+                    "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                    "title":"Design-Mai",
+                    "description":"We created our website completely from scratch. Therefore, we used HTML, SCSS and JS to give it a fresh and mordern look on any device."
+                })
         
-        <!-- Row 1 -->
-        <div class="row-one portfolio-content-row">
-            <!-- Design Mai -->
-            @@include("partials/portfolioBox.html", {
-                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
-                "title":"Design-Mai",
-                "description":"We created our website completely from scratch. Therefore, we used HTML, SCSS and JS to give it a fresh and mordern look on any device."
-            })
+                <!-- Fewo Heidenrod -->
+                @@include("partials/portfolioBox.html", {
+                    "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                    "title":"Fewo-Heidenrod",
+                    "description":"We create a simple and beautiful Wordpress website for Fewo-Heidenrod. Hosting, Domain, SSL and Domain email were set up and manage from us."
+                })
+            </div>
 
-            <!-- Fewo Heidenrod -->
-            @@include("partials/portfolioBox.html", {
-                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
-                "title":"Fewo-Heidenrod",
-                "description":"We create a simple and beautiful Wordpress website for Fewo-Heidenrod. Hosting, Domain, SSL and Domain email were set up and manage from us."
-            })
+            <!-- row 2 -->
+            <div class="row justify-content-lg-between">
+                <!-- TusharInnovation -->
+                @@include("partials/portfolioBox.html", {
+                    "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                    "title":"Tushar Innovation",
+                    "description":"For Tushar we redesign the website and made sure it is also responsive on mobile phones. We host the website, domain and his business email address."
+                })
+    
+                <!-- SSV-Watzelhain -->
+                @@include("partials/portfolioBox.html", {
+                    "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                    "title":"SSV-Watzelhain",
+                    "description":"We made a completely new redesign of the website for SSV-Watzelhain. To ensure the usability we include simple fonts and made it mobible ready."
+                })
+            </div>
+
+            <a class="link h3 py-1 px-2" href="portfolio.html">→ View all projects</a>
         </div>
-        
-
-        <!-- row 2 -->
-        <div class="row-two portfolio-content-row">
-            <!-- TusharInnovation -->
-            @@include("partials/portfolioBox.html", {
-                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
-                "title":"Tushar Innovation",
-                "description":"For Tushar we redesign the website and made sure it is also responsive on mobile phones. We host the website, domain and his business email address."
-            })
-
-            <!-- SSV-Watzelhain -->
-            @@include("partials/portfolioBox.html", {
-                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
-                "title":"SSV-Watzelhain",
-                "description":"We made a completely new redesign of the website for SSV-Watzelhain. To ensure the usability we include simple fonts and made it mobible ready."
-            })
-        </div>
-
-        <h3 class="h3-action">→ View all projects</h3>
     </section>
 
 
     <!-- SERVICE -->
-    <section class="services-section py-5 px-4 py-lg-7">
+    <section class="services-section py-5 px-4 bg-secondary py-lg-6 my-lg-8">
         <div class="container">
             <h2 class="display-5 pb-4">How can we help you?</h2>
-            <div class="row justify-content-lg-between">
+            <div class="row justify-content-lg-between mb-4">
                 <div class="row col-lg-7 justify-content-lg-around">
                     <div class="py-3 col-lg-3">
                         <span class="sitemap-h6">Strategy</span>
@@ -127,22 +128,22 @@
                     </div>                      
                 </div>
 
-                <div class="services-illust text-lg-center d-none d-lg-block">
+                <div class="services-illust d-none d-lg-block col-lg-5 text-lg-center">
                     <img src="assets/img/Design Components Short _Sal.svg" width="60%">
                 </div>
             </div>
 
-            <h3 class="h3-action">→ Learn more</h3>
+            <a class="link h3 py-1 px-2" href="services.html">→ Learn more</a>
         </div>       
     </section>
     
 
     <!-- Call to action -->
-    <section class="calltoaction container py-5 my-3 px-5 py-lg-7 my-lg-6">
+    <section class="calltoaction container py-5 my-8 px-5 py-lg-6 my-lg-8">
         <div class="row">
             <div class="text-center pb-4 col-lg-8 text-lg-start pb-lg-0 align-self-center">
                 <p class="display-4">Got an idea?</p>
-                <a class="h5" href="contact.html">Let's work together.</a>
+                <a class="h4" href="contact.html"><u>Let's work together.</u></a>
             </div>
     
             <div class="d-flex justify-content-center align-items-center col-lg-4 text-lg-end">
@@ -161,7 +162,7 @@
  
 
     <!-- Testimonials -->
-    <section class="testimonial-slider-section py-5 py-lg-8">
+    <section class="testimonial-slider-section pt-4 pb-9 py-lg-6 my-lg-8">
         <div class="container px-5 pb-4 pb-lg-7">
             <h2 class="display-5">What clients say!</h2>
         </div>
@@ -172,36 +173,36 @@
                     <img src="assets/img/Reviews _Sal.svg" width="85%">
                 </div>
                         
-                <div class="testimonial-slider-box bg-primary py-5 px-6 col-lg-7 py-lg-7 px-lg-7">
+                <div class="testimonial-slider-box bg-primary py-5 px-6 col-lg-7 py-lg-6">
                     <div class="testimonial-slider-container">                              
                         <!-- Tushar Innovation -->
                         <div class="testimonial-slider-quote">
-                            <p class="quote h5 pb-3">
+                            <p class="h5 pb-3">
                                 I really loved working with Mai. <br />
                                 The most important thing I loved about her is that she has so much patience. 
                                 She completes each and every small request of mine and that too in a professional and with quality.<br />
                                 I definitely gonna work with her for long.
                             </p> 
-                            <span class="customer-h5">tusharinnovation.com</span>
+                            <span class="testimonial-h5">tusharinnovation.com</span>
                             <p class="author">Tushar Shar | CEO</p>
                         </div>
                                 
                         <div class="testimonial-slider-quote">
-                            <p class="quote h5">
+                            <p class="h5">
                                 Wunderbarer & kompetenter Service, jeder Wunsch wurde zur vollsten Zufriedenheit erfüllt. 
                                 Würde immer wieder auf Design-Mai zurückgreifen.<br />
                                 Kann ich jeden ohne Bedenken empfehlen!
                             </p> 
-                            <span class="customer-h5">woot-gaming.com</span>
+                            <span class="testimonial-h5">woot-gaming.com</span>
                             <p class="author">Daniel Leeb | CEO</p>
                         </div>
                                 
                         <div class="testimonial-slider-quote">
-                            <p class="quote h5">
+                            <p class="h5">
                                 Tolle Ideen und Gestaltung, super schnelle Umsetzung.<br />
                                 Sehr empfehlenswert!
                             </p> 
-                            <span class="customer-h5">fewo-heidenrod.de</span>
+                            <span class="testimonial-h5">fewo-heidenrod.de</span>
                             <p class="author">Ute Groll</p>
                         </div>
                     </div>

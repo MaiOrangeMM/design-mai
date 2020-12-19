@@ -1,4 +1,9 @@
-$primary: salmon;
+/* Test color:
+Türkis: #219ebc
+Babyblau: #4ea8de
+Grün: #55a630;
+*/
+$primary: #4ea8de;
 $secondary: #d3d3d3;
 $black: #000;
 $white: #FFF;
@@ -36,6 +41,23 @@ a, a:visited {
 a:hover {
     color: $primary;
 }
+
+.link {
+    background-color: transparent;
+    transition: background-color 1s ease-out;
+    
+}
+
+.link:hover {
+    color: $white;
+    background-color: $primary
+}
+
+.calltoaction{
+    border-top: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+}
+
 
 .socialmediaicon:hover {
     background-color: #FFF;
