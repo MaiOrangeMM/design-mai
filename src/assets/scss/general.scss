@@ -3,6 +3,7 @@ Türkis: #219ebc
 Babyblau: #4ea8de
 Grün: #55a630;
 */
+
 $primary: salmon;
 $secondary: #d3d3d3;
 $warning: #999;
@@ -11,7 +12,9 @@ $white: #FFF;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-.display-1, .display-2, .display-3, .display-4, .display-5, .display-6  {
+/* General Style */
+
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
     font-weight: 600;
 }
 
@@ -35,18 +38,23 @@ a:hover {
     background-color: $primary
 }
 
+/* ========================== */
+
 .calltoaction{
     border-top: 2px solid $primary;
     border-bottom: 2px solid $primary;
 }
-
 
 .socialmediaicon:hover {
     background-color: #FFF;
 }
 
 /* NAV */
+/* Menu Toggle Button ============================================*/
 .toggle-btn {
+    position: fixed;
+    top: 2.4rem;
+    right:0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -56,7 +64,8 @@ a:hover {
 
 .menu-span {
     padding-right: 1rem;
-    color: $warning;
+    color: #999;
+    transition: all 1s ease-in-out;
     font-size: 1.1rem;
 }
 
@@ -79,7 +88,7 @@ a:hover {
 .menu-btn__lines::after {
     width: 1.5rem;
     height: 0.2rem;
-    background-color: $primary;
+    background-color: $salmon;
     transition: all 0.5s ease-in-out;
 }
 
@@ -106,6 +115,97 @@ a:hover {
 
 .menu-btn.open .menu-btn__lines::after {
     transform: rotate(-45deg);
+}
+/* EOF === Menu Toggle Button ====================================*/
+/* ==============================================================*/
+
+
+/* Side Nav ================================================*/
+.side-nav {
+    z-index: 9998;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 620px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 2rem 5rem;
+    transform: translateX(100vw);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: -10px 0px 10px 1px #aaaaaa11;
+}
+
+.side-nav.open {
+    transform: translateX(0);
+}
+
+.side-nav a{
+    text-decoration: none;
+    color: #111;
+}
+
+.side-nav-link {
+    margin: 4.5rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-nav-link a {
+    font-size: 3rem;
+    line-height: 5rem;
+    padding: 1rem;
+}
+
+.side-nav-link-item {
+    display: inline-block;
+    background: linear-gradient(to left, #fff 50%, $salmon 50%) right;
+    background-size: 201%;
+    transition: 0.5s ease-out;
+}
+
+.side-nav-link-item:hover{
+    background-position: left;
+}
+
+.side-nav-action {
+    padding: 2rem 0;
+    border-top: 1px solid $bg-light-grey;
+    border-bottom: 1px solid $bg-light-grey;
+}
+
+.side-nav-action a {
+    font-size: 1.1rem;
+    border-bottom: 2px solid #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.side-nav-action a:hover {
+    
+    border-bottom: 2px solid $salmon;
+}
+
+.side-nav-social {
+    padding: 2rem 0;
+}
+
+.side-nav-social a {
+    margin-right: 2rem;
+    padding: 0.3rem;
+}
+
+.side-nav-social-item {
+    display: inline-block;
+    background: linear-gradient(to left, #fff 50%, $salmon 50%) right;
+    background-size: 201%;
+    transition: .3s ease-out;
+}
+
+.side-nav-social-item:hover{
+    background-position: left;
+}
+
+.side-nav-social-symbol {
+    display: none;
 }
 
 /* SITE MAP */
