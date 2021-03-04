@@ -1,0 +1,29 @@
+/* Footer ==================================================*/
+.footer {
+    background-color: $primary;
+    padding: 1rem 15rem;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.footer-social-link, .footer-social-link:visited {
+    text-decoration: none;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 1em;
+    margin: 0.5em;
+    transition: all 0.5s ease-out;
+}
+
+.footer-social-link:hover {
+    background-color: #FFF;
+}

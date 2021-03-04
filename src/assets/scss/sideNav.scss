@@ -1,60 +1,8 @@
-/* Test color:
-Türkis: #219ebc
-Babyblau: #4ea8de
-Grün: #55a630;
-*/
-
-$primary: salmon;
-$secondary: #d3d3d3;
-$warning: #999;
-$black: #000;
-$white: #FFF;
-
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-
-/* General Style */
-
-.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
-    font-weight: 600;
-}
-
-a, a:visited {
-    color: $black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: $primary;
-}
-
-.link {
-    background-color: transparent;
-    transition: background-color 1s ease-out;
-    
-}
-
-.link:hover {
-    color: $white;
-    background-color: $primary
-}
-
-/* ========================== */
-
-.calltoaction{
-    border-top: 2px solid $primary;
-    border-bottom: 2px solid $primary;
-}
-
-.socialmediaicon:hover {
-    background-color: #FFF;
-}
-
-/* NAV */
 /* Menu Toggle Button ============================================*/
 .toggle-btn {
     position: fixed;
     top: 2.4rem;
-    right:0;
+    right:15rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -88,7 +36,7 @@ a:hover {
 .menu-btn__lines::after {
     width: 1.5rem;
     height: 0.2rem;
-    background-color: $salmon;
+    background-color: $primary;
     transition: all 0.5s ease-in-out;
 }
 
@@ -126,76 +74,91 @@ a:hover {
     position: fixed;
     top: 0;
     right: 0;
-    width: 620px;
     height: 100vh;
     background-color: #fff;
-    padding: 2rem 5rem;
+    padding: 2rem;
     transform: translateX(100vw);
     transition: transform 0.5s ease-in-out;
-    box-shadow: -10px 0px 10px 1px #aaaaaa11;
+    box-shadow: none;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) { 
+        width: 620px;
+        box-shadow: -10px 0px 10px 1px #aaaaaa11;
+        padding: 2rem 5rem;
+    }
+    &.open{
+        transform: translateX(0);
+    }
+    & a {
+        text-decoration: none;
+        color: #111;
+    }
 }
 
-.side-nav.open {
-    transform: translateX(0);
-}
-
-.side-nav a{
-    text-decoration: none;
-    color: #111;
-}
 
 .side-nav-link {
     margin: 4.5rem 0 3rem 0;
     display: flex;
     flex-direction: column;
+
+    @include media-breakpoint-up(lg) { 
+        margin-top: 3rem;
+    }
 }
 
 .side-nav-link a {
-    font-size: 3rem;
-    line-height: 5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     padding: 1rem;
+    @include media-breakpoint-up(lg) { 
+        font-size: 3rem;
+        line-height: 5rem;
+        padding: 1rem;        
+    }
 }
 
+
+/* MAI */
 .side-nav-link-item {
     display: inline-block;
-    background: linear-gradient(to left, #fff 50%, $salmon 50%) right;
+    background: linear-gradient(to left, #fff 50%, $primary 50%) right;
     background-size: 201%;
     transition: 0.5s ease-out;
-}
 
-.side-nav-link-item:hover{
-    background-position: left;
+    &:hover {
+        background-position: left; 
+    }
 }
 
 .side-nav-action {
     padding: 2rem 0;
     border-top: 1px solid $bg-light-grey;
     border-bottom: 1px solid $bg-light-grey;
-}
 
-.side-nav-action a {
-    font-size: 1.1rem;
-    border-bottom: 2px solid #fff;
-    transition: all 0.2s ease-in-out;
-}
+    & a {
+        font-size: 1.1rem;
+        border-bottom: 2px solid #fff;
+        transition: all 0.2s ease-in-out;
+    }
 
-.side-nav-action a:hover {
-    
-    border-bottom: 2px solid $salmon;
+    & a:hover {
+        border-bottom: 2px solid $primary;
+    }
 }
 
 .side-nav-social {
     padding: 2rem 0;
-}
 
-.side-nav-social a {
-    margin-right: 2rem;
-    padding: 0.3rem;
+    & a{
+        margin-right: 2rem;
+        padding: 0.3rem;
+    }
 }
 
 .side-nav-social-item {
     display: inline-block;
-    background: linear-gradient(to left, #fff 50%, $salmon 50%) right;
+    background: linear-gradient(to left, #fff 50%, $primary 50%) right;
     background-size: 201%;
     transition: .3s ease-out;
 }
@@ -208,20 +171,4 @@ a:hover {
     display: none;
 }
 
-/* SITE MAP */
-.sitemap-h6 {
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.list-group {
-    .list-group-item:first-child {
-        border-top: 2px solid $black;
-    }
-
-    .list-group-item, .list-group-item:last-child {
-        background-color: transparent;
-        border-bottom: 1px solid $black;
-        padding: 0.5rem 0;
-    }    
-}
+/* EOF === SideNav ================================================*/
