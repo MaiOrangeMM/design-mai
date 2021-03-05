@@ -14,80 +14,66 @@
     })
 
     <!-- PORTFOLIO -->
-    <section class="portfolio-section">
-        <h2>About Design-Mai </h2>
+    <section class="py-5 px-4 py-lg-6">
+        <h2 class="display-5">About Design-Mai </h1>
             
         <h3>We are a passionate webdesign team. </h3>
     
         <h3 class="h3-action">→ View all projects</h3>
     </section>
 
-    <!-- Call to action -->
-    <section class="action-section">
-        <div class="action-box">
-            <div class="action-text">
-                <h2 class="h2-idea">Interested?</h2>
-                <a class="h2-action" href="contact.html"><h2 class="h2-action">Let's work together.</h2></a>
-            </div>
-        
-            <div class="action-social">
-                <a class="action-link" href="#">Instagram</a>
-                <a class="action-link" href="#">Dribble</a>
-                <a class="action-link" href="#">Linked In</a>
+    <!-- Preview -->
+    <section class="py-5 px-4 py-lg-6">
+        <div class="container">
+            <h2 class="display-5">Need Inspirations?</h2>
+            <div class="row justify-content-lg-between mb-4">
+                <div class="py-4 col-lg-3 text-center">
+                    <img src="assets/img/Coding _Sal.svg" width="50%">
+                </div>
+
+                <div class="py-4 col-lg-3 text-center">
+                    <img src="assets/img/Coding _Sal.svg" width="50%">
+                </div>
+
+                <div class="py-4 col-lg-3 text-center d-none d-lg-block">
+                    <img src="assets/img/Coding _Sal.svg" width="50%">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SERVICE -->
-    <section class="services-section">
-        <h2>How can we help you?</h2>
-        
-            <div class="services-content">
-                <div class="strategy">
-                    <h3>Strategy</h3>
-                    <ul>
-                        <li>Online strategy</li>
-                        <li>Consulting</li>
-                    </ul>
-                </div>
-                <div class="design">
-                    <h3>Design</h3>
-                    <ul>
-                        <li>Website Design</li>
-                        <li>Responsive Design</li>
-                        <li>Business Package</li>
-                    </ul>
-                </div>
-                <div class="development">
-                    <h3>Development</h3>
-                    <ul>
-                        <li>Websites</li>
-                        <li>Landingpages</li>
-                        <li>Web Optimization</li>
-                        <li>SEO</li>
-                        <li>HTML5 / CSS3 / JS</li>
-                        <li>Wordpress</li>
-                    </ul>
-                </div>
-                <div class="hosting">
-                    <h3>Hosting</h3>
-                    <ul>
-                        <li>Webspace</li>
-                        <li>Domain</li>
-                        <li>SSL-Certificate</li>
-                        <li>Domain Email</li>
-                        <li>Maintenance</li>
-                    </ul>
+
+    <!-- Call To Action -->
+    @@include("partials/calltoaction.html")
+
+    <!-- Services-->
+    <section class="pt-5 px-4">
+        <div class="container">
+            <h2 class="display-5">How can we help?</h2>
+
+            <div class="row justify-content-lg-between mb-4">
+                <div class="row justify-content-lg-around">
+                    <div class="py-3 col-lg-3">
+                        <h3>01 Strategy</h3> 
+                    </div>
+
+                    <div class="py-3 col-lg-3">
+                        <h3>02 Design</h3> 
+                    </div>
+
+                    <div class="py-3 col-lg-3">
+                        <h3>03 Development</h3> 
+                    </div>
+
+                    <div class="py-3 col-lg-3">
+                        <h3>04 Hosting</h3> 
+                    </div>
                 </div>
 
-                <div class="services-illust">
-                    <img src="@@webRoot/src/assets/img/Design Components Short _Sal.svg" width="60%">
-                </div>
+                <a class="link h3 py-1 px-2" href="services.html">→ Get to know more</a>
+            </div>      
         </div>
-    
-        <h3 class="h3-action">→ Learn more</h3>
     </section>
-    
 
     <!-- Sitemap && Footer-->
     @@include("partials/footer.html")
