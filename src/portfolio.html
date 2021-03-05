@@ -14,111 +14,55 @@
     })
 
     <!-- PORTFOLIO -->
-    <section class="portfolio-section">
-        <h2>Selected projects.</h2>
+    <section class="py-5 px-4 py-lg-6">
+        <div class="container">
+            <h2 class="display-5 pb-4">Selected projects.</h2>
+    
+            <!-- Row 1 -->
+            <div class="row justify-content-lg-between">
+                <!-- Design Mai -->
+                @@include("partials/portfolioBox.html", {
+                    "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                    "title":"Design-Mai",
+                    "description":"We created our website completely from scratch. Therefore, we used HTML, SCSS and JS to give it a fresh and mordern look on any device."
+                })
             
-        <!-- Row 1 -->
-        <div class="row-one portfolio-content-row">
-            <!-- Design Mai -->
-            @@include("partials/portfolioBox.html", {
-                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
-                "title":"Design-Mai",
-                "description":"We created our website completely from scratch. Therefore, we used HTML, SCSS and JS to give it a fresh and mordern look on any device."                })
-    
-            <!-- Fewo Heidenrod -->
-            @@include("partials/portfolioBox.html", {
-                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
-                "title":"Fewo-Heidenrod",
-                "description":"We create a simple and beautiful Wordpress website for Fewo-Heidenrod. Hosting, Domain, SSL and Domain email were set up and manage from us."
-            })
-        </div>
-            
-    
-        <!-- row 2 -->
-        <div class="row-two portfolio-content-row">
-            <!-- TusharInnovation -->
-            @@include("partials/portfolioBox.html", {
-                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
-                "title":"Tushar Innovation",
-                "description":"For Tushar we redesign the website and made sure it is also responsive on mobile phones. We host the website, domain and his business email address."
-            })
-    
-            <!-- SSV-Watzelhain -->
-            @@include("partials/portfolioBox.html", {
-                "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
-                "title":"SSV-Watzelhain",
-                "description":"We made a completely new redesign of the website for SSV-Watzelhain. To ensure the usability we include simple fonts and made it mobible ready."
-            })
-        </div>
-    
-        <h3 class="h3-action">→ View all projects</h3>
-    </section>
-
-    <!-- Call to action -->
-    <section class="action-section">
-        <div class="action-box">
-            <div class="action-text">
-                <h2 class="h2-idea">Interested?</h2>
-                <a class="h2-action" href="contact.html"><h2 class="h2-action">Let's work together.</h2></a>
+                <!-- Fewo Heidenrod -->
+                @@include("partials/portfolioBox.html", {
+                    "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                    "title":"Fewo-Heidenrod",
+                    "description":"We create a simple and beautiful Wordpress website for Fewo-Heidenrod. Hosting, Domain, SSL and Domain email were set up and manage from us."
+                })
             </div>
-        
-            <div class="action-social">
-                <a class="action-link" href="#">Instagram</a>
-                <a class="action-link" href="#">Dribble</a>
-                <a class="action-link" href="#">Linked In</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICE -->
-    <section class="services-section">
-        <h2>How can we help you?</h2>
-        
-            <div class="services-content">
-                <div class="strategy">
-                    <h3>Strategy</h3>
-                    <ul>
-                        <li>Online strategy</li>
-                        <li>Consulting</li>
-                    </ul>
-                </div>
-                <div class="design">
-                    <h3>Design</h3>
-                    <ul>
-                        <li>Website Design</li>
-                        <li>Responsive Design</li>
-                        <li>Business Package</li>
-                    </ul>
-                </div>
-                <div class="development">
-                    <h3>Development</h3>
-                    <ul>
-                        <li>Websites</li>
-                        <li>Landingpages</li>
-                        <li>Web Optimization</li>
-                        <li>SEO</li>
-                        <li>HTML5 / CSS3 / JS</li>
-                        <li>Wordpress</li>
-                    </ul>
-                </div>
-                <div class="hosting">
-                    <h3>Hosting</h3>
-                    <ul>
-                        <li>Webspace</li>
-                        <li>Domain</li>
-                        <li>SSL-Certificate</li>
-                        <li>Domain Email</li>
-                        <li>Maintenance</li>
-                    </ul>
-                </div>
-
-                <div class="services-illust">
-                    <img src="@@webRoot/src/assets/img/Design Components Short _Sal.svg" width="60%">
-                </div>
-        </div>
     
-        <h3 class="h3-action">→ Learn more</h3>
+            <!-- row 2 -->
+            <div class="row justify-content-lg-between">
+                <!-- TusharInnovation -->
+                @@include("partials/portfolioBox.html", {
+                    "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                    "title":"Tushar Innovation",
+                    "description":"For Tushar we redesign the website and made sure it is also responsive on mobile phones. We host the website, domain and his business email address."
+                })
+        
+                <!-- SSV-Watzelhain -->
+                @@include("partials/portfolioBox.html", {
+                    "image": "@@webRoot/assets/img/Prototyping process _Sal.svg",
+                    "title":"SSV-Watzelhain",
+                    "description":"We made a completely new redesign of the website for SSV-Watzelhain. To ensure the usability we include simple fonts and made it mobible ready."
+                })
+            </div>
+    
+            <a class="link h3 py-1 px-2" href="portfolio.html">→ View all projects</a>
+        </div>
     </section>
+
+    
+    <!-- Services-->
+    @@include("partials/service.html")
+
+
+    <!-- Call To Action -->
+    @@include("partials/calltoaction.html")   
     
 
     <!-- Sitemap && Footer-->

@@ -1,20 +1,5 @@
 /* Footer ==================================================*/
-.footer {
-    background-color: $primary;
-    padding: 1rem 15rem;
-    color: #111;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-social {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-}
-
-.footer-social-link, .footer-social-link:visited {
+.socialmediaicon, .socialmediaicon:visited {
     text-decoration: none;
     display: flex;
     justify-items: center;
@@ -24,6 +9,6 @@
     transition: all 0.5s ease-out;
 }
 
-.footer-social-link:hover {
+.socialmediaicon:hover {
     background-color: #FFF;
 }
